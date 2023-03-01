@@ -45,7 +45,7 @@ const VideoDetail = () => {
               }}
               opts={{
                 width: percentage * window.innerWidth,
-                height: percentage * window.innerHeight,
+                height: percentage * window.innerWidth * 16 / 9,
               }}
             />
             <Typography color="#fff" variant="h5" fontWeight="bold" p={2}>
