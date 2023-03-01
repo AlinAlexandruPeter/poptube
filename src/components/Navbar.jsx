@@ -30,7 +30,7 @@ const Navbar = () => {
             display: isMobile ? "none" : "",
           }}
         >
-          PopTube
+          UrTubw
         </h1>
       </Link>
 
