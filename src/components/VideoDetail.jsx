@@ -8,7 +8,7 @@ import { Videos } from "./";
 import { fetchFromAPI } from "../utils/fetchFromAPI";
 
 const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-const percentage = isMobile ? 0.9 : 0.65;
+const width = (isMobile ? 0.9 : 0.65) * window.innerWitdh;
 
 const VideoDetail = () => {
   const { id } = useParams();
@@ -44,8 +44,8 @@ const VideoDetail = () => {
                 marginInline: "5%",
               }}
               opts={{
-                width: percentage * window.innerWidth,
-                height: percentage * (window.innerWidth) * 9 / 16,
+                width: width,
+                height: width * 9 / 16,
               }}
             />
             <Typography color="#fff" variant="h5" fontWeight="bold" p={2}>
