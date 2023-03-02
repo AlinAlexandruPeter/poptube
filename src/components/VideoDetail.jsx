@@ -10,7 +10,7 @@ import { fetchFromAPI } from "../utils/fetchFromAPI";
 const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 console.log(isMobile)
 let width = (isMobile ? 0.9 : 0.65);
-let width *= window.innerWidth;
+width *= window.innerWidth;
 console.log(width, window.innerWidth)
 
 const VideoDetail = () => {
