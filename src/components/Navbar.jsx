@@ -17,6 +17,7 @@ const Navbar = () => {
         background: "#000",
         top: 0,
         justifyContent: "space-between",
+        zIndex: "6",
       }}
     >
       <Link to="/" style={{ display: "flex", alignItens: "center" }}>
@@ -30,7 +31,7 @@ const Navbar = () => {
             display: isMobile ? "none" : "",
           }}
         >
-          UrTube
+          PopTube
         </h1>
       </Link>
 
