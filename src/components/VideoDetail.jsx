@@ -17,7 +17,9 @@ const VideoDetail = () => {
   const navigate = useNavigate();
 
   const onVideoEnd = () => {
-    if (autoplay) navigate(`/video/${nextId}`);
+    setTimeout(() => {
+      if (autoplay) navigate(`/video/${nextId}`);
+    }, 1500);
   };
 
   const [videoDetail, setVideoDetail] = useState(null);
