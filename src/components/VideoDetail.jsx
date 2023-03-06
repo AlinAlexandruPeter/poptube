@@ -101,6 +101,7 @@ const VideoDetail = () => {
           justifyContent="center"
           alignItems="center"
           sx={{ position: "relative", overflow: "hidden" }}
+          className="suggested"
         >
           <Stack
             direction="row"
