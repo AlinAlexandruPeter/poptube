@@ -100,7 +100,7 @@ const VideoDetail = () => {
           py={{ md: 1, xs: 5 }}
           justifyContent="center"
           alignItems="center"
-          sx={{ position: "relative" }}
+          sx={{ position: "relative", overflow: "hidden" }}
         >
           <Stack
             direction="row"
@@ -112,7 +112,7 @@ const VideoDetail = () => {
               top: "0",
               right: "0",
               zIndex: "5",
-              overflowY: "auto"
+              overflowY: "scroll"
             }}
             mb={2}
             p={1}
