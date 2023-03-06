@@ -48,6 +48,15 @@ a {
   transition: all 0.3s ease;
 }
 
+.suggested::-webkit-scrollbar {
+  display: none;
+}
+
+.suggested {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
 @media screen and (max-width: 900px) {
   .category-btn {
     margin: 10px;
