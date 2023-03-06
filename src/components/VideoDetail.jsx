@@ -113,12 +113,11 @@ const VideoDetail = () => {
               top: "0",
               right: "0",
               zIndex: "5",
-              overflowY: "scroll"
             }}
             mb={2}
             p={1}
             alignItems="center"
-            justifyContent="space-between"
+            justifyContent={{ xs: "space-around", md:"space-between"}}
           >
             <Typography
               variant={{ xs: "h5", md: "h4" }}
