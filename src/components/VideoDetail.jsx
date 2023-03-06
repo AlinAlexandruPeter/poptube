@@ -107,7 +107,7 @@ const VideoDetail = () => {
             sx={{
               borderBottom: "1px solid #ccc",
               background: "black",
-              position: "absolute",
+              position: "sticky",
               width: "100%",
               top: "0",
               right: "0",
