@@ -100,9 +100,10 @@ const VideoDetail = () => {
           py={{ md: 1, xs: 5 }}
           justifyContent="center"
           alignItems="center"
-          sx={{ position: "relative", overflow: "hidden" }}
+          sx={{ position: "relative", overflow: "hidden", md: {width: "max-content"} }}
           className="suggested"
         >
+        { videos &&
           <Stack
             direction="row"
             sx={{
@@ -131,6 +132,7 @@ const VideoDetail = () => {
               onClick={() => setAutoplay((prevStatus) => !prevStatus)}
             />
           </Stack>
+        }
           <Videos videos={videos} direction="column" />
         </Box>
       </Stack>
